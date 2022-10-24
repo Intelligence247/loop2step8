@@ -8,6 +8,10 @@
 ## Tech/framework used
 - Html
 - Css
+## Preview here
+[demo](https://rawcdn.githack.com/Intelligence247/loop2step8/8a92a2b688d9ae75238c29fcccbe3f44bf86ded6/index.html)
+
+![screenshot](/media/sketch.png)
 ## Contact
 If you want to contact me you can reach me at
 - https://github.com/Intelligence247 or
