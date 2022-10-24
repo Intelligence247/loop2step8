@@ -1,5 +1,4 @@
 # loop2step8
-# cyberusa
 *An implementation of loop2step8 clone with html and css*
 ## Prequisite
 - Your browser version should be up to date for better experience
