@@ -107,36 +107,79 @@ aside {
 .padlock {
     display: flex;
     gap: 1rem;
-
     align-items: center;
 }
 
 .offon {
-    /* background-color: #4a7cf3; */
-    background-color: #4a7cf3;
-    width: 2.4rem;
-    height: 1.3rem;
-    border-radius: 10px;
-    padding: 0.5px;
-    border: 0.5px solid #a8a8ab;
-    display: flex;
-    justify-content: right;
+
+    width: 3rem;
+    height: 1.6rem;
+    display: inline-block;
+    position: relative;
+
 }
 
 .on {
+    border: 0.5px solid #a8a8ab;
+    border-radius: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    position: absolute;
+    margin-top: 0.1rem;
+
+}
+
+.on::after {
+    content: "";
     width: 1.2rem;
     height: 1.2rem;
     background-color: white;
     border-radius: 50%;
     border: 0.5px solid #a8a8ab;
+    position: absolute;
+    margin-right: -0.5rem;
+    transition: all 0.25s linear;
 }
 
-.offon:hover,
-.offon:focus {
-    background-color: white;
-    cursor: pointer;
-    justify-content: left;
+input {
+    display: none;
 }
+
+input:checked+.on::after {
+    transform: translateX(23.5px);
+
+}
+
+input:checked+.on {
+    background-color: #4a7cf3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .lock p:first-child {
     font-weight: 900;
